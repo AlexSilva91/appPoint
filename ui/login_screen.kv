@@ -1,0 +1,18 @@
+<LoginScreen>:
+    BoxLayout:
+        orientation: 'vertical'
+        Label:
+            text: 'Login'
+            font_size: 32
+        TextInput:
+            id: email
+            hint_text: 'Email'
+            multiline: False
+        TextInput:
+            id: password
+            hint_text: 'Senha'
+            password: True
+            multiline: False
+        Button:
+            text: 'Entrar'
+            on_press: app.login(email.text, password.text)

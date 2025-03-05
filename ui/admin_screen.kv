@@ -1,0 +1,21 @@
+<AdminScreen>:
+    BoxLayout:
+        orientation: 'vertical'
+        Label:
+            text: 'Bem-vindo, Administrador'
+            font_size: 32
+        Button:
+            text: 'Cadastrar Usuário'
+            on_press: root.manager.current = 'cadastrar_usuario'
+        Button:
+            text: 'Editar Usuário'
+            on_press: root.manager.current = 'editar_usuario'
+        Button:
+            text: 'Remover Usuário'
+            on_press: root.manager.current = 'remover_usuario'
+        Button:
+            text: 'Visualizar Todos Usuários'
+            on_press: root.manager.current = 'visualizar_todos_usuarios'
+        Button:
+            text: 'Sair'
+            on_press: app.logout()

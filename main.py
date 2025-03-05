@@ -72,7 +72,9 @@ if __name__ == '__main__':
 
     # Registrando ponto para um usuário comum
     ponto = Ponto('pontoID2', 'usuarioID2', '2025-03-03', '08:00', '12:00', '14:00', '20:00')
+    ponto2 = Ponto('pontoID3', 'usuarioID2', '2025-03-03', '08:00', '12:00', '14:00', '20:00')
     PontoService.bater_ponto(ponto)
+    PontoService.bater_ponto(ponto2)
 
     # Listar pontos batidos pelo usuário comum
     pontos_ref = db.collection('pontos').where('usuarioID', '==', 'usuarioID2')

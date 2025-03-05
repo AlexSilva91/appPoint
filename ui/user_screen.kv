@@ -1,0 +1,18 @@
+<UserScreen>:
+    BoxLayout:
+        orientation: 'vertical'
+        Label:
+            text: 'Bem-vindo, Usuário Comum'
+            font_size: 32
+        Button:
+            text: 'Registrar Ponto'
+            on_press: root.manager.current = 'registrar_ponto'
+        Button:
+            text: 'Visualizar Pontos'
+            on_press: root.manager.current = 'visualizar_pontos'
+        Button:
+            text: 'Visualizar Banco de Horas'
+            on_press: root.manager.current = 'visualizar_banco_horas'
+        Button:
+            text: 'Sair'
+            on_press: app.logout()
